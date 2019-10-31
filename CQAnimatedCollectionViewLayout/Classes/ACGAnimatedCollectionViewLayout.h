@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ACGAnimatedCollectionViewLayout : UICollectionViewFlowLayout
 
-@property (nonatomic, strong) id<ACGLayoutAttributesAnimator> animator;
+@property (nonatomic, strong) CubeAttributesAnimator *animator;
 
 
 @end

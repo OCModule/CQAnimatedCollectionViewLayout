@@ -7,49 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0422364C8F9E2F8EE36A70AAC601DDC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		06671692BE402EE65D07AAD43E158ACD /* Pods-CQAnimatedCollectionViewLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FAD1704D01C00C57EAF99CC53A7D65 /* Pods-CQAnimatedCollectionViewLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		123BB1ED785388DDC309D04593431A1C /* UIView+CQExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 576091D4D36713658B3770B36245BA1D /* UIView+CQExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18607C90FC9069529E40B14B6DADDBFA /* ACGLayoutAttributesAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 346C9A9566D20F68A9B17D00FF1FC7B7 /* ACGLayoutAttributesAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AE79DB8E36AB4525B940E9D093E8A05 /* ACGCubeAttributesAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = B1142C0D761ADD4B40D9DE9EFA91B9DC /* ACGCubeAttributesAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BE029F05B9C98E4F3D011D25F5B4EB8 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3022C76594076257EEC3190EBD444 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m */; };
-		1CBF3095E28AC7C1B31A3A16A7CBDBD2 /* ACGAnimatedCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 215B604506F2B2607C840F21E8039C91 /* ACGAnimatedCollectionViewLayout.m */; };
-		4184A886E2E7CA1F45C25FDD9D7D08FF /* ACGAnimatedCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4041FD1A9E32034AABE93BC505C22E85 /* ACGAnimatedCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CE3F1D9417521066D6BDEAF5C6B885D /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE66366DCBFF5ECE216EE5946D012F4D /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3370A93F39F6A270D6A83B5FC4892B97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4D4968B9031C3B1AD69DA6E30A647C7A /* Pods-CQAnimatedCollectionViewLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E3A2AB4694878D50F923BD90A3E194 /* Pods-CQAnimatedCollectionViewLayout_Tests-dummy.m */; };
-		575D28B09BBCFB430ECE722F68734B88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5E3B07C89834D583454AED0C3B411C46 /* ACGCubeAttributesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFBD15FFDC3C562377C84DE471B92B4 /* ACGCubeAttributesAnimator.m */; };
-		69B4D04AA7E77BC255746E4E67CF158F /* UIView+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FB4E5BD08C5F4D91EEAAF918527922 /* UIView+CQExt.m */; };
-		76FCB187A34ABCD6950F97654A9DAF5E /* CQAnimatedCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20219C76A452159D1E486F92C710AE26 /* CQAnimatedCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C2B45D50215642A632EA7FD8EB6CB70 /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE66366DCBFF5ECE216EE5946D012F4D /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F0904C5639A7DCB835B4110FB204571 /* CQAnimatedCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22835E9FDA9ACCDA2F401FD7EC856B01 /* CQAnimatedCollectionViewLayout-dummy.m */; };
 		9873070F0BB2C7C5FF66B884CCF40F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		AF3E4D3188271072CD4B830E1B3DFD58 /* CQAnimatedCollectionViewLayoutHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 853C6CBF9FE732D226A5D9B1C85C4D99 /* CQAnimatedCollectionViewLayoutHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA23E81DABF07EAB700F16FB9C2BD5FF /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = B17AB7D853B2DA5CD17C629A285CD901 /* ACGAnimatedCollectionViewLayoutAttributes.m */; };
-		C6ECA28B80C730B5B0BB104A2CBE864A /* ACGAnimatedCollectionViewLayoutAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC4A8EB30384F4A45043140D47C7A53 /* ACGAnimatedCollectionViewLayoutAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3A11329B8F10CE7649D6E5EA21B378 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3022C76594076257EEC3190EBD444 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C5726EC4B5B32BE4E5CE80B94F79289A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B0A2A69CA9D55354F6F85F140B361A56;
-			remoteInfo = CQAnimatedCollectionViewLayout;
-		};
 		C658BEE657353133ED7C38142A1A6403 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A1F67BD91B00CC08600AF96CEF82061;
+			remoteGlobalIDString = 51564F49406BC3892C5B1AAB73717973;
 			remoteInfo = "Pods-CQAnimatedCollectionViewLayout_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1339A50B8AAF393B42521DC9398BB733 /* Pods-CQAnimatedCollectionViewLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQAnimatedCollectionViewLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		20219C76A452159D1E486F92C710AE26 /* CQAnimatedCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQAnimatedCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
-		215B604506F2B2607C840F21E8039C91 /* ACGAnimatedCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACGAnimatedCollectionViewLayout.m; path = CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayout.m; sourceTree = "<group>"; };
-		22835E9FDA9ACCDA2F401FD7EC856B01 /* CQAnimatedCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CQAnimatedCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		25E06A0D25A56E0F3F38D6B901B1516A /* Pods-CQAnimatedCollectionViewLayout_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CQAnimatedCollectionViewLayout_Example-resources.sh"; sourceTree = "<group>"; };
 		2B7814E3D5126721568A385627BF06B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,63 +34,38 @@
 		315DF456B60E0E94E75E8F65AA5E8D0D /* Pods-CQAnimatedCollectionViewLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQAnimatedCollectionViewLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3262933FF64CF061AE14EE889B4B74F1 /* Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		346C9A9566D20F68A9B17D00FF1FC7B7 /* ACGLayoutAttributesAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACGLayoutAttributesAnimator.h; path = CQAnimatedCollectionViewLayout/Classes/ACGLayoutAttributesAnimator.h; sourceTree = "<group>"; };
 		34D638393E0E5FB3E7EB09B0ED57C7DA /* Pods-CQAnimatedCollectionViewLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CQAnimatedCollectionViewLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4041FD1A9E32034AABE93BC505C22E85 /* ACGAnimatedCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACGAnimatedCollectionViewLayout.h; path = CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayout.h; sourceTree = "<group>"; };
 		43303FA794B989D648FB17309919DDA3 /* Pods-CQAnimatedCollectionViewLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CQAnimatedCollectionViewLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
-		47F5DFA1B13BF04B78FDF10B4CED6E43 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQAnimatedCollectionViewLayout_Tests.framework; path = "Pods-CQAnimatedCollectionViewLayout_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC4A8EB30384F4A45043140D47C7A53 /* ACGAnimatedCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACGAnimatedCollectionViewLayoutAttributes.h; path = CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
 		55EDF8A1A5B432C195167442812B7613 /* Pods-CQAnimatedCollectionViewLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQAnimatedCollectionViewLayout_Tests.modulemap"; sourceTree = "<group>"; };
-		576091D4D36713658B3770B36245BA1D /* UIView+CQExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CQExt.h"; path = "CQAnimatedCollectionViewLayout/Classes/UIView+CQExt.h"; sourceTree = "<group>"; };
-		5AA7CA9EA382311EAE5B73BBC06DF1EE /* CQAnimatedCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CQAnimatedCollectionViewLayout.framework; path = CQAnimatedCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C1DD837BE7F1AAEEE0916C797F151D6 /* CQAnimatedCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CQAnimatedCollectionViewLayout.modulemap; sourceTree = "<group>"; };
-		65E9420A2D16A309A3DCDB3F3356C759 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQAnimatedCollectionViewLayout_Example.framework; path = "Pods-CQAnimatedCollectionViewLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F073FE7DB27000F662871F8A7E88F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69AEB961EB63558F231238D8CC242FF6 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQAnimatedCollectionViewLayout_Example.framework; path = "Pods-CQAnimatedCollectionViewLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD3022C76594076257EEC3190EBD444 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQAnimatedCollectionViewLayout_Example-dummy.m"; sourceTree = "<group>"; };
-		72C4A47D5A85C0D77A75A46BC6F688C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		73E3A2AB4694878D50F923BD90A3E194 /* Pods-CQAnimatedCollectionViewLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CQAnimatedCollectionViewLayout_Tests-dummy.m"; sourceTree = "<group>"; };
-		77EE1265E2AEA9795E18447DFD69BF0B /* CQAnimatedCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CQAnimatedCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
 		846B3D412BF39BF72A69094841ADA6AB /* Pods-CQAnimatedCollectionViewLayout_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CQAnimatedCollectionViewLayout_Tests-resources.sh"; sourceTree = "<group>"; };
-		853C6CBF9FE732D226A5D9B1C85C4D99 /* CQAnimatedCollectionViewLayoutHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CQAnimatedCollectionViewLayoutHeader.h; path = CQAnimatedCollectionViewLayout/Classes/CQAnimatedCollectionViewLayoutHeader.h; sourceTree = "<group>"; };
-		86FB4E5BD08C5F4D91EEAAF918527922 /* UIView+CQExt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CQExt.m"; path = "CQAnimatedCollectionViewLayout/Classes/UIView+CQExt.m"; sourceTree = "<group>"; };
-		B1142C0D761ADD4B40D9DE9EFA91B9DC /* ACGCubeAttributesAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACGCubeAttributesAnimator.h; path = CQAnimatedCollectionViewLayout/Classes/ACGCubeAttributesAnimator.h; sourceTree = "<group>"; };
-		B17AB7D853B2DA5CD17C629A285CD901 /* ACGAnimatedCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACGAnimatedCollectionViewLayoutAttributes.m; path = CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
 		B41310CF79050AB18D0F9B562F2FA26F /* Pods-CQAnimatedCollectionViewLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CQAnimatedCollectionViewLayout_Example.modulemap"; sourceTree = "<group>"; };
 		BE66366DCBFF5ECE216EE5946D012F4D /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h"; sourceTree = "<group>"; };
 		C3FAD1704D01C00C57EAF99CC53A7D65 /* Pods-CQAnimatedCollectionViewLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CQAnimatedCollectionViewLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CCC7F01AA639661AF0360BF07783B9A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEFBD15FFDC3C562377C84DE471B92B4 /* ACGCubeAttributesAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACGCubeAttributesAnimator.m; path = CQAnimatedCollectionViewLayout/Classes/ACGCubeAttributesAnimator.m; sourceTree = "<group>"; };
 		D4EB9CF8446D2B2154C7883BDAFEB881 /* Pods-CQAnimatedCollectionViewLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQAnimatedCollectionViewLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DA41C6424D8423B3F22FB47C60ABA0AC /* CQAnimatedCollectionViewLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CQAnimatedCollectionViewLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8F72E6BB0B72509105DB38868DFB191 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CQAnimatedCollectionViewLayout_Tests.framework; path = "Pods-CQAnimatedCollectionViewLayout_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B654BEF0DDBC5EC6BA130FD38CA3D3 /* Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E947285D34E411792392F5F79609A123 /* Pods-CQAnimatedCollectionViewLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CQAnimatedCollectionViewLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F62B5161D9092C9DA1505F5E8E0A3710 /* Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8255BDF702E22A9086FC8770FEB9742 /* CQAnimatedCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CQAnimatedCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
-		FE5E1D4C8A3B4C6C187E482AEA13E4B7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		28224ABA3D08EDC8E11808005CA96EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3370A93F39F6A270D6A83B5FC4892B97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75FA425C4FB0D172B9F040047CE304D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9873070F0BB2C7C5FF66B884CCF40F55 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		972EBDD0571D7B81827CD03104E710DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				575D28B09BBCFB430ECE722F68734B88 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC03E1E14E1DFFE656E116F9440AF0BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0422364C8F9E2F8EE36A70AAC601DDC0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,20 +99,11 @@
 			path = "Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests";
 			sourceTree = "<group>";
 		};
-		4237F35296943AC7C9417387009DAF71 /* Development Pods */ = {
+		7300B6BB9719FB4CDC905F072867CF90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2AEFEB403D6DE9962AD0A705DE2F2FB /* CQAnimatedCollectionViewLayout */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4AB18639DE04773D2306A4BF539A7A00 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5AA7CA9EA382311EAE5B73BBC06DF1EE /* CQAnimatedCollectionViewLayout.framework */,
-				65E9420A2D16A309A3DCDB3F3356C759 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */,
-				47F5DFA1B13BF04B78FDF10B4CED6E43 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */,
+				69AEB961EB63558F231238D8CC242FF6 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */,
+				D8F72E6BB0B72509105DB38868DFB191 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,50 +126,6 @@
 			path = "Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example";
 			sourceTree = "<group>";
 		};
-		7C47AD5E3C88424BB3850FB18AD7E643 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DA41C6424D8423B3F22FB47C60ABA0AC /* CQAnimatedCollectionViewLayout.podspec */,
-				FE5E1D4C8A3B4C6C187E482AEA13E4B7 /* LICENSE */,
-				72C4A47D5A85C0D77A75A46BC6F688C2 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		97144B7FE4BF6EF4ABE85E83E60FEF7C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C1DD837BE7F1AAEEE0916C797F151D6 /* CQAnimatedCollectionViewLayout.modulemap */,
-				F8255BDF702E22A9086FC8770FEB9742 /* CQAnimatedCollectionViewLayout.xcconfig */,
-				22835E9FDA9ACCDA2F401FD7EC856B01 /* CQAnimatedCollectionViewLayout-dummy.m */,
-				77EE1265E2AEA9795E18447DFD69BF0B /* CQAnimatedCollectionViewLayout-prefix.pch */,
-				20219C76A452159D1E486F92C710AE26 /* CQAnimatedCollectionViewLayout-umbrella.h */,
-				CCC7F01AA639661AF0360BF07783B9A7 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CQAnimatedCollectionViewLayout";
-			sourceTree = "<group>";
-		};
-		A2AEFEB403D6DE9962AD0A705DE2F2FB /* CQAnimatedCollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				4041FD1A9E32034AABE93BC505C22E85 /* ACGAnimatedCollectionViewLayout.h */,
-				215B604506F2B2607C840F21E8039C91 /* ACGAnimatedCollectionViewLayout.m */,
-				4DC4A8EB30384F4A45043140D47C7A53 /* ACGAnimatedCollectionViewLayoutAttributes.h */,
-				B17AB7D853B2DA5CD17C629A285CD901 /* ACGAnimatedCollectionViewLayoutAttributes.m */,
-				B1142C0D761ADD4B40D9DE9EFA91B9DC /* ACGCubeAttributesAnimator.h */,
-				CEFBD15FFDC3C562377C84DE471B92B4 /* ACGCubeAttributesAnimator.m */,
-				346C9A9566D20F68A9B17D00FF1FC7B7 /* ACGLayoutAttributesAnimator.h */,
-				853C6CBF9FE732D226A5D9B1C85C4D99 /* CQAnimatedCollectionViewLayoutHeader.h */,
-				576091D4D36713658B3770B36245BA1D /* UIView+CQExt.h */,
-				86FB4E5BD08C5F4D91EEAAF918527922 /* UIView+CQExt.m */,
-				7C47AD5E3C88424BB3850FB18AD7E643 /* Pod */,
-				97144B7FE4BF6EF4ABE85E83E60FEF7C /* Support Files */,
-			);
-			name = CQAnimatedCollectionViewLayout;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,9 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
-				4237F35296943AC7C9417387009DAF71 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4AB18639DE04773D2306A4BF539A7A00 /* Products */,
+				7300B6BB9719FB4CDC905F072867CF90 /* Products */,
 				02DB2719F7DEB1EFE718BACB438C4BE2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -257,20 +155,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0657CB02AE2E73C23F36EFCA6E151E56 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4184A886E2E7CA1F45C25FDD9D7D08FF /* ACGAnimatedCollectionViewLayout.h in Headers */,
-				C6ECA28B80C730B5B0BB104A2CBE864A /* ACGAnimatedCollectionViewLayoutAttributes.h in Headers */,
-				1AE79DB8E36AB4525B940E9D093E8A05 /* ACGCubeAttributesAnimator.h in Headers */,
-				18607C90FC9069529E40B14B6DADDBFA /* ACGLayoutAttributesAnimator.h in Headers */,
-				76FCB187A34ABCD6950F97654A9DAF5E /* CQAnimatedCollectionViewLayout-umbrella.h in Headers */,
-				AF3E4D3188271072CD4B830E1B3DFD58 /* CQAnimatedCollectionViewLayoutHeader.h in Headers */,
-				123BB1ED785388DDC309D04593431A1C /* UIView+CQExt.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49E0684D4CE256A6A63418E2DA58D627 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,34 +163,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2ECB8D889DB88EE7956BEF0F9481A4B /* Headers */ = {
+		58B3CC3DC8F38497D14D8FDAC33AC042 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2B45D50215642A632EA7FD8EB6CB70 /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h in Headers */,
+				2CE3F1D9417521066D6BDEAF5C6B885D /* Pods-CQAnimatedCollectionViewLayout_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4A1F67BD91B00CC08600AF96CEF82061 /* Pods-CQAnimatedCollectionViewLayout_Example */ = {
+		51564F49406BC3892C5B1AAB73717973 /* Pods-CQAnimatedCollectionViewLayout_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C03AA23E335258A3671F630ABC00923 /* Build configuration list for PBXNativeTarget "Pods-CQAnimatedCollectionViewLayout_Example" */;
+			buildConfigurationList = ECEADEE687F739C81AF7428264A9FA7C /* Build configuration list for PBXNativeTarget "Pods-CQAnimatedCollectionViewLayout_Example" */;
 			buildPhases = (
-				A2ECB8D889DB88EE7956BEF0F9481A4B /* Headers */,
-				18C83BB52863627811C65F0BCAB2449D /* Sources */,
-				972EBDD0571D7B81827CD03104E710DA /* Frameworks */,
-				D22F7EDA03DB1224258039181E53ADF0 /* Resources */,
+				58B3CC3DC8F38497D14D8FDAC33AC042 /* Headers */,
+				720923F4E4A993B8534D8FB6C5AFB0D0 /* Sources */,
+				28224ABA3D08EDC8E11808005CA96EFA /* Frameworks */,
+				29E32793216EB30BD4A6BAE52D7A42B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A8571095C7C9EAD82E84EBF85ABB43A3 /* PBXTargetDependency */,
 			);
 			name = "Pods-CQAnimatedCollectionViewLayout_Example";
 			productName = "Pods-CQAnimatedCollectionViewLayout_Example";
-			productReference = 65E9420A2D16A309A3DCDB3F3356C759 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */;
+			productReference = 69AEB961EB63558F231238D8CC242FF6 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7179B6D48F494494D6328A51801543FC /* Pods-CQAnimatedCollectionViewLayout_Tests */ = {
@@ -325,25 +208,7 @@
 			);
 			name = "Pods-CQAnimatedCollectionViewLayout_Tests";
 			productName = "Pods-CQAnimatedCollectionViewLayout_Tests";
-			productReference = 47F5DFA1B13BF04B78FDF10B4CED6E43 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B0A2A69CA9D55354F6F85F140B361A56 /* CQAnimatedCollectionViewLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 501199FAE8B64D136564F7CBBD8A7B59 /* Build configuration list for PBXNativeTarget "CQAnimatedCollectionViewLayout" */;
-			buildPhases = (
-				0657CB02AE2E73C23F36EFCA6E151E56 /* Headers */,
-				0AA8FFB8C1A285CC8E92D6CFE1655262 /* Sources */,
-				FC03E1E14E1DFFE656E116F9440AF0BD /* Frameworks */,
-				943CAF68C586BBE9478C5F9CD0E0A6C6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CQAnimatedCollectionViewLayout;
-			productName = CQAnimatedCollectionViewLayout;
-			productReference = 5AA7CA9EA382311EAE5B73BBC06DF1EE /* CQAnimatedCollectionViewLayout.framework */;
+			productReference = D8F72E6BB0B72509105DB38868DFB191 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -363,19 +228,18 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4AB18639DE04773D2306A4BF539A7A00 /* Products */;
+			productRefGroup = 7300B6BB9719FB4CDC905F072867CF90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0A2A69CA9D55354F6F85F140B361A56 /* CQAnimatedCollectionViewLayout */,
-				4A1F67BD91B00CC08600AF96CEF82061 /* Pods-CQAnimatedCollectionViewLayout_Example */,
+				51564F49406BC3892C5B1AAB73717973 /* Pods-CQAnimatedCollectionViewLayout_Example */,
 				7179B6D48F494494D6328A51801543FC /* Pods-CQAnimatedCollectionViewLayout_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		943CAF68C586BBE9478C5F9CD0E0A6C6 /* Resources */ = {
+		29E32793216EB30BD4A6BAE52D7A42B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,41 +253,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D22F7EDA03DB1224258039181E53ADF0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AA8FFB8C1A285CC8E92D6CFE1655262 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1CBF3095E28AC7C1B31A3A16A7CBDBD2 /* ACGAnimatedCollectionViewLayout.m in Sources */,
-				BA23E81DABF07EAB700F16FB9C2BD5FF /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */,
-				5E3B07C89834D583454AED0C3B411C46 /* ACGCubeAttributesAnimator.m in Sources */,
-				8F0904C5639A7DCB835B4110FB204571 /* CQAnimatedCollectionViewLayout-dummy.m in Sources */,
-				69B4D04AA7E77BC255746E4E67CF158F /* UIView+CQExt.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18C83BB52863627811C65F0BCAB2449D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BE029F05B9C98E4F3D011D25F5B4EB8 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FFDD3987833EE8DFE126E6829EC7595 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4D4968B9031C3B1AD69DA6E30A647C7A /* Pods-CQAnimatedCollectionViewLayout_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720923F4E4A993B8534D8FB6C5AFB0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3A11329B8F10CE7649D6E5EA21B378 /* Pods-CQAnimatedCollectionViewLayout_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,49 +278,12 @@
 		A20E081CDFB828E753D0C260361F11CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CQAnimatedCollectionViewLayout_Example";
-			target = 4A1F67BD91B00CC08600AF96CEF82061 /* Pods-CQAnimatedCollectionViewLayout_Example */;
+			target = 51564F49406BC3892C5B1AAB73717973 /* Pods-CQAnimatedCollectionViewLayout_Example */;
 			targetProxy = C658BEE657353133ED7C38142A1A6403 /* PBXContainerItemProxy */;
-		};
-		A8571095C7C9EAD82E84EBF85ABB43A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CQAnimatedCollectionViewLayout;
-			target = B0A2A69CA9D55354F6F85F140B361A56 /* CQAnimatedCollectionViewLayout */;
-			targetProxy = C5726EC4B5B32BE4E5CE80B94F79289A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08ECB82DC0A86208A836FB6613E80C44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8255BDF702E22A9086FC8770FEB9742 /* CQAnimatedCollectionViewLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CQAnimatedCollectionViewLayout/CQAnimatedCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CQAnimatedCollectionViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CQAnimatedCollectionViewLayout/CQAnimatedCollectionViewLayout.modulemap";
-				PRODUCT_MODULE_NAME = CQAnimatedCollectionViewLayout;
-				PRODUCT_NAME = CQAnimatedCollectionViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		38353FA9D5FA20DD329E5D98A1390FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F62B5161D9092C9DA1505F5E8E0A3710 /* Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig */;
@@ -637,38 +445,6 @@
 			};
 			name = Debug;
 		};
-		6C4600904D18E02A1C34D20F3D713901 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8255BDF702E22A9086FC8770FEB9742 /* CQAnimatedCollectionViewLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CQAnimatedCollectionViewLayout/CQAnimatedCollectionViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CQAnimatedCollectionViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CQAnimatedCollectionViewLayout/CQAnimatedCollectionViewLayout.modulemap";
-				PRODUCT_MODULE_NAME = CQAnimatedCollectionViewLayout;
-				PRODUCT_NAME = CQAnimatedCollectionViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		8A86036011E4138BE803ADD3786588C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3262933FF64CF061AE14EE889B4B74F1 /* Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig */;
@@ -703,7 +479,40 @@
 			};
 			name = Release;
 		};
-		A613950348216E5F1709EC3A96E3C1EF /* Release */ = {
+		CD692757C6C30A2AAE147C876E7BF9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EB9CF8446D2B2154C7883BDAFEB881 /* Pods-CQAnimatedCollectionViewLayout_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC4621D6659B0E1D4EAB644CFD4B15BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6B654BEF0DDBC5EC6BA130FD38CA3D3 /* Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig */;
 			buildSettings = {
@@ -737,51 +546,9 @@
 			};
 			name = Release;
 		};
-		A9F732698C8DE69A7640BE7721BF0776 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4EB9CF8446D2B2154C7883BDAFEB881 /* Pods-CQAnimatedCollectionViewLayout_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C03AA23E335258A3671F630ABC00923 /* Build configuration list for PBXNativeTarget "Pods-CQAnimatedCollectionViewLayout_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9F732698C8DE69A7640BE7721BF0776 /* Debug */,
-				A613950348216E5F1709EC3A96E3C1EF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -791,20 +558,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		501199FAE8B64D136564F7CBBD8A7B59 /* Build configuration list for PBXNativeTarget "CQAnimatedCollectionViewLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				08ECB82DC0A86208A836FB6613E80C44 /* Debug */,
-				6C4600904D18E02A1C34D20F3D713901 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9BB72BCFE7809A6B1B283F81A04E4FAE /* Build configuration list for PBXNativeTarget "Pods-CQAnimatedCollectionViewLayout_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38353FA9D5FA20DD329E5D98A1390FFD /* Debug */,
 				8A86036011E4138BE803ADD3786588C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECEADEE687F739C81AF7428264A9FA7C /* Build configuration list for PBXNativeTarget "Pods-CQAnimatedCollectionViewLayout_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD692757C6C30A2AAE147C876E7BF9EE /* Debug */,
+				FC4621D6659B0E1D4EAB644CFD4B15BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

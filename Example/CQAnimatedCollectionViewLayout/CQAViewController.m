@@ -10,7 +10,7 @@
 #import "CQACollectionViewCell.h"
 #import "UIColor+CQExt.h"
 #import "CQAnimatedCollectionViewLayoutHeader.h"
-#import "CQAnimatedCollectionViewLayout_Example-Swift.h"
+
 
 @interface CQAViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -72,7 +72,7 @@
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
         CGRect frame = self.view.bounds;
-        AnimatedCollectionViewLayout *layout = [[AnimatedCollectionViewLayout alloc] init];
+        ACGAnimatedCollectionViewLayout *layout = [[ACGAnimatedCollectionViewLayout alloc] init];
         layout.animator = self.animator;
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         _collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];

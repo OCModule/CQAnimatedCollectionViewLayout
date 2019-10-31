@@ -1,9 +1,9 @@
 use_frameworks!
 
 platform :ios, '8.0'
-
+# See: https://github.com/KelvinJin/AnimatedCollectionViewLayout 
 target 'CQAnimatedCollectionViewLayout_Example' do
-  pod 'CQAnimatedCollectionViewLayout', :path => '../'
+#  pod 'CQAnimatedCollectionViewLayout', :path => '../'
 
   target 'CQAnimatedCollectionViewLayout_Tests' do
     inherit! :search_paths
