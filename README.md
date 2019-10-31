@@ -22,7 +22,6 @@ pod 'CQAnimatedCollectionViewLayout'
 
 ## Author
 
-王承权, wangchengquan@qiyi.com
 
 ## License
 
