@@ -1,0 +1,16 @@
+PODS:
+  - CQAnimatedCollectionViewLayout (0.1.0)
+
+DEPENDENCIES:
+  - CQAnimatedCollectionViewLayout (from `../`)
+
+EXTERNAL SOURCES:
+  CQAnimatedCollectionViewLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CQAnimatedCollectionViewLayout: 619ce80514c7cc015f3c79126e5b6a43461cdcfa
+
+PODFILE CHECKSUM: 1b37b3fc7714756449641c96a30325e0c1e5e3ae
+
+COCOAPODS: 1.5.3

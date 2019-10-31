@@ -1,0 +1,22 @@
+{
+  "name": "CQAnimatedCollectionViewLayout",
+  "version": "0.1.0",
+  "summary": "A short description of CQAnimatedCollectionViewLayout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/王承权/CQAnimatedCollectionViewLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "王承权": "wangchengquan@qiyi.com"
+  },
+  "source": {
+    "git": "https://github.com/王承权/CQAnimatedCollectionViewLayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CQAnimatedCollectionViewLayout/Classes/**/*"
+}

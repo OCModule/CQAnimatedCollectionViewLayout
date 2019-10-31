@@ -1,0 +1,6 @@
+framework module CQAnimatedCollectionViewLayout {
+  umbrella header "CQAnimatedCollectionViewLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
