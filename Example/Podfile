@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'CQAnimatedCollectionViewLayout_Example' do
-  pod 'CQAnimatedCollectionViewLayout', :path => '../'
+#  pod 'CQAnimatedCollectionViewLayout', :path => '../'
 
   target 'CQAnimatedCollectionViewLayout_Tests' do
     inherit! :search_paths

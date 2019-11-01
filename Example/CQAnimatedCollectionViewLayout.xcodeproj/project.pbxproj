@@ -23,12 +23,15 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		AAF393CA236AD32700DD312C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393C9236AD32700DD312C /* File.swift */; };
 		AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */; };
 		AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CD236AD35400DD312C /* UIColor+CQExt.m */; };
 		AAF393E3236AD4F700DD312C /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393DD236AD4F700DD312C /* AnimatedCollectionViewLayout.swift */; };
 		AAF393E4236AD4F700DD312C /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393DF236AD4F700DD312C /* CubeAttributesAnimator.swift */; };
 		AAF393E5236AD4F700DD312C /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393E0236AD4F700DD312C /* UIView+Anchor.swift */; };
+		AAF394F9236C032600DD312C /* ACGAnimatedCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F0236C032600DD312C /* ACGAnimatedCollectionViewLayout.m */; };
+		AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F2236C032600DD312C /* ACGCubeAttributesAnimator.m */; };
+		AAF394FB236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F3236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m */; };
+		AAF394FC236C032600DD312C /* UIView+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F7236C032600DD312C /* UIView+CQExt.m */; };
 		E5250A335DE26F491FB47D7C /* Pods_CQAnimatedCollectionViewLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D98C2E56E09212CAE753089 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +74,6 @@
 		88F3A16E0E95A350FCD6F369 /* Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests/Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		98CC2C17E61ED69E90503DB9 /* Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests/Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAF393C8236AD32700DD312C /* CQAnimatedCollectionViewLayout_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CQAnimatedCollectionViewLayout_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		AAF393C9236AD32700DD312C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		AAF393CB236AD35300DD312C /* CQACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQACollectionViewCell.h; sourceTree = "<group>"; };
 		AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQACollectionViewCell.m; sourceTree = "<group>"; };
 		AAF393CD236AD35400DD312C /* UIColor+CQExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CQExt.m"; sourceTree = "<group>"; };
@@ -80,6 +82,16 @@
 		AAF393DF236AD4F700DD312C /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeAttributesAnimator.swift; sourceTree = "<group>"; };
 		AAF393E0236AD4F700DD312C /* UIView+Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 		AAF393E2236AD4F700DD312C /* AnimatedCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedCollectionViewLayout.h; sourceTree = "<group>"; };
+		AAF394EF236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGAnimatedCollectionViewLayoutAttributes.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		AAF394F0236C032600DD312C /* ACGAnimatedCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACGAnimatedCollectionViewLayout.m; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayout.m; sourceTree = "<group>"; };
+		AAF394F1236C032600DD312C /* UIView+CQExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+CQExt.h"; path = "../../../CQAnimatedCollectionViewLayout/Classes/UIView+CQExt.h"; sourceTree = "<group>"; };
+		AAF394F2236C032600DD312C /* ACGCubeAttributesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACGCubeAttributesAnimator.m; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGCubeAttributesAnimator.m; sourceTree = "<group>"; };
+		AAF394F3236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACGAnimatedCollectionViewLayoutAttributes.m; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		AAF394F4236C032600DD312C /* CQAnimatedCollectionViewLayoutHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CQAnimatedCollectionViewLayoutHeader.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/CQAnimatedCollectionViewLayoutHeader.h; sourceTree = "<group>"; };
+		AAF394F5236C032600DD312C /* ACGCubeAttributesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGCubeAttributesAnimator.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGCubeAttributesAnimator.h; sourceTree = "<group>"; };
+		AAF394F6236C032600DD312C /* ACGLayoutAttributesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGLayoutAttributesAnimator.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGLayoutAttributesAnimator.h; sourceTree = "<group>"; };
+		AAF394F7236C032600DD312C /* UIView+CQExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CQExt.m"; path = "../../../CQAnimatedCollectionViewLayout/Classes/UIView+CQExt.m"; sourceTree = "<group>"; };
+		AAF394F8236C032600DD312C /* ACGAnimatedCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGAnimatedCollectionViewLayout.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayout.h; sourceTree = "<group>"; };
 		B250C72266C811CA0C0CE0FE /* Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F52F95926B56FA99E4B7F36E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FB2B6D2A073B2B0B7CB77FC2 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAnimatedCollectionViewLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +160,7 @@
 		6003F593195388D20070C39A /* Example for CQAnimatedCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				AAF394EE236C02F200DD312C /* CQAnimatedCollectionViewLayout */,
 				AAF393DC236AD4F700DD312C /* AnimatedCollectionViewLayout */,
 				AAF393CB236AD35300DD312C /* CQACollectionViewCell.h */,
 				AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */,
@@ -161,7 +174,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				AAF393C9236AD32700DD312C /* File.swift */,
 				AAF393C8236AD32700DD312C /* CQAnimatedCollectionViewLayout_Example-Bridging-Header.h */,
 			);
 			name = "Example for CQAnimatedCollectionViewLayout";
@@ -238,6 +250,23 @@
 			path = Animators;
 			sourceTree = "<group>";
 		};
+		AAF394EE236C02F200DD312C /* CQAnimatedCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AAF394F8236C032600DD312C /* ACGAnimatedCollectionViewLayout.h */,
+				AAF394F0236C032600DD312C /* ACGAnimatedCollectionViewLayout.m */,
+				AAF394EF236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.h */,
+				AAF394F3236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m */,
+				AAF394F5236C032600DD312C /* ACGCubeAttributesAnimator.h */,
+				AAF394F2236C032600DD312C /* ACGCubeAttributesAnimator.m */,
+				AAF394F6236C032600DD312C /* ACGLayoutAttributesAnimator.h */,
+				AAF394F4236C032600DD312C /* CQAnimatedCollectionViewLayoutHeader.h */,
+				AAF394F1236C032600DD312C /* UIView+CQExt.h */,
+				AAF394F7236C032600DD312C /* UIView+CQExt.m */,
+			);
+			path = CQAnimatedCollectionViewLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,7 +278,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				B886274A9D068F7CB7FA49B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,28 +412,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B886274A9D068F7CB7FA49B5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CQAnimatedCollectionViewLayout/CQAnimatedCollectionViewLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CQAnimatedCollectionViewLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -414,11 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF393E4236AD4F700DD312C /* CubeAttributesAnimator.swift in Sources */,
+				AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */,
 				AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* CQAAppDelegate.m in Sources */,
-				AAF393CA236AD32700DD312C /* File.swift in Sources */,
+				AAF394FC236C032600DD312C /* UIView+CQExt.m in Sources */,
+				AAF394F9236C032600DD312C /* ACGAnimatedCollectionViewLayout.m in Sources */,
 				6003F5A7195388D20070C39A /* CQAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				AAF394FB236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */,
 				AAF393E3236AD4F700DD312C /* AnimatedCollectionViewLayout.swift in Sources */,
 				AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */,
 				AAF393E5236AD4F700DD312C /* UIView+Anchor.swift in Sources */,

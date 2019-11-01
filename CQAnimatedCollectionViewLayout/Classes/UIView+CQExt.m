@@ -11,9 +11,6 @@
 @implementation UIView (CQExt)
 
 - (void)keepCenterAndApplyAnchorPoint: (CGPoint)point {
-//    if (self.layer.anchorPoint.x != point.x || self.layer.anchorPoint.y != point.y) {
-//        return;
-//    }
     CGPoint newPoint = CGPointMake(self.bounds.size.width * point.x, self.bounds.size.height * point.y);
     CGPoint oldPoint = CGPointMake(self.bounds.size.width * self.layer.anchorPoint.x, self.bounds.size.height * self.layer.anchorPoint.y);
     newPoint = CGPointApplyAffineTransform(newPoint, self.transform);
