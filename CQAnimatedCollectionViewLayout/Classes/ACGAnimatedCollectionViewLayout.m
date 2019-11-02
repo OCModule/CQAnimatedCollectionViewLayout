@@ -13,8 +13,9 @@
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSArray<UICollectionViewLayoutAttributes *> *array = [super layoutAttributesForElementsInRect:rect];
     NSMutableArray<UICollectionViewLayoutAttributes *> *retArr = [NSMutableArray array];
+//    attributes.map { self.transformLayoutAttributes($0.copy() as! ACGAnimatedCollectionViewLayoutAttributes) }
     for (ACGAnimatedCollectionViewLayoutAttributes *attributes in array) {
-        UICollectionViewLayoutAttributes *temp = [self transformLayoutAttributes:attributes];
+        UICollectionViewLayoutAttributes *temp = [self transformLayoutAttributes:[attributes copy]];
         [retArr addObject:temp];
     }
     return [retArr copy];

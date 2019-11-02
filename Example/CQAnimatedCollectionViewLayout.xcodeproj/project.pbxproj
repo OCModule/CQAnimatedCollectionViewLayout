@@ -32,6 +32,8 @@
 		AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F2236C032600DD312C /* ACGCubeAttributesAnimator.m */; };
 		AAF394FB236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F3236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m */; };
 		AAF394FC236C032600DD312C /* UIView+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F7236C032600DD312C /* UIView+CQExt.m */; };
+		AAF39503236C455400DD312C /* ACGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF39502236C455400DD312C /* ACGCollectionView.m */; };
+		AAF39512236D839200DD312C /* ACGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF39511236D839200DD312C /* ACGScrollView.m */; };
 		E5250A335DE26F491FB47D7C /* Pods_CQAnimatedCollectionViewLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D98C2E56E09212CAE753089 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,10 @@
 		AAF394F6236C032600DD312C /* ACGLayoutAttributesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGLayoutAttributesAnimator.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGLayoutAttributesAnimator.h; sourceTree = "<group>"; };
 		AAF394F7236C032600DD312C /* UIView+CQExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+CQExt.m"; path = "../../../CQAnimatedCollectionViewLayout/Classes/UIView+CQExt.m"; sourceTree = "<group>"; };
 		AAF394F8236C032600DD312C /* ACGAnimatedCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGAnimatedCollectionViewLayout.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayout.h; sourceTree = "<group>"; };
+		AAF39501236C455400DD312C /* ACGCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGCollectionView.h; sourceTree = "<group>"; };
+		AAF39502236C455400DD312C /* ACGCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGCollectionView.m; sourceTree = "<group>"; };
+		AAF39510236D839200DD312C /* ACGScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGScrollView.h; sourceTree = "<group>"; };
+		AAF39511236D839200DD312C /* ACGScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGScrollView.m; sourceTree = "<group>"; };
 		B250C72266C811CA0C0CE0FE /* Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F52F95926B56FA99E4B7F36E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FB2B6D2A073B2B0B7CB77FC2 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAnimatedCollectionViewLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +181,10 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				AAF393C8236AD32700DD312C /* CQAnimatedCollectionViewLayout_Example-Bridging-Header.h */,
+				AAF39501236C455400DD312C /* ACGCollectionView.h */,
+				AAF39502236C455400DD312C /* ACGCollectionView.m */,
+				AAF39510236D839200DD312C /* ACGScrollView.h */,
+				AAF39511236D839200DD312C /* ACGScrollView.m */,
 			);
 			name = "Example for CQAnimatedCollectionViewLayout";
 			path = CQAnimatedCollectionViewLayout;
@@ -278,6 +288,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				3695B9B40C7E124946BEBD51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,6 +401,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3695B9B40C7E124946BEBD51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		52BF042704424E4CDCA40F2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF393E4236AD4F700DD312C /* CubeAttributesAnimator.swift in Sources */,
+				AAF39512236D839200DD312C /* ACGScrollView.m in Sources */,
 				AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */,
 				AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* CQAAppDelegate.m in Sources */,
@@ -427,6 +461,7 @@
 				AAF394F9236C032600DD312C /* ACGAnimatedCollectionViewLayout.m in Sources */,
 				6003F5A7195388D20070C39A /* CQAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				AAF39503236C455400DD312C /* ACGCollectionView.m in Sources */,
 				AAF394FB236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */,
 				AAF393E3236AD4F700DD312C /* AnimatedCollectionViewLayout.swift in Sources */,
 				AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */,

@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ACGCollectionView;
+
 @interface CQACollectionViewCell : UICollectionViewCell
+
+@property (nonatomic, strong) UIScrollView *scrollview;
+@property (nonatomic, strong) ACGCollectionView *collectionView;
 
 @property (nonatomic, strong) UILabel *label;
 + (NSString *)reuseIdentifier;

@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat startOffset;
 @property (nonatomic, assign) CGFloat middleOffset;
 @property (nonatomic, assign) CGFloat endOffset;
+@property (nonatomic, assign) BOOL animated;
 
 @end
 

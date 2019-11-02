@@ -21,27 +21,26 @@ open class CubeAttributesAnimator: NSObject {
         self.totalAngle = .pi / 4
     }
     
-    open func animate(collectionView: UICollectionView, attributes: AnimatedCollectionViewLayoutAttributes) {
+    open func animate(collectionView: UICollectionView, attributes: ACGAnimatedCollectionViewLayoutAttributes) {
         let position = attributes.middleOffset
         if abs(position) >= 1 {
-            attributes.contentView?.layer.transform = CATransform3DIdentity
+            attributes.contentView.layer.transform = CATransform3DIdentity
         } else if attributes.scrollDirection == .horizontal {
             let rotateAngle = totalAngle * position
-             print("\(self.perspective)" + "🌹" + "\(rotateAngle)")
             var transform = CATransform3DIdentity
             transform.m34 = perspective
             transform = CATransform3DRotate(transform, rotateAngle, 0, 1, 0)
             
-            attributes.contentView?.layer.transform = transform
-            attributes.contentView?.keepCenterAndApplyAnchorPoint(CGPoint(x: position > 0 ? 0 : 1, y: 0.5))
+            attributes.contentView.layer.transform = transform
+            attributes.contentView.keepCenterAndApplyAnchorPoint(CGPoint(x: position > 0 ? 0 : 1, y: 0.5))
         } else {
             let rotateAngle = totalAngle * position
             var transform = CATransform3DIdentity
             transform.m34 = perspective
             transform = CATransform3DRotate(transform, rotateAngle, -1, 0, 0)
             
-            attributes.contentView?.layer.transform = transform
-            attributes.contentView?.keepCenterAndApplyAnchorPoint(CGPoint(x: 0.5, y: position > 0 ? 0 : 1))
+            attributes.contentView.layer.transform = transform
+            attributes.contentView.keepCenterAndApplyAnchorPoint(CGPoint(x: 0.5, y: position > 0 ? 0 : 1))
         }
     }
 }

@@ -11,12 +11,14 @@
 #import "UIColor+CQExt.h"
 #import "CQAnimatedCollectionViewLayoutHeader.h"
 #import "CQAnimatedCollectionViewLayout_Example-Swift.h"
+#import "ACGCollectionView.h"
 
 @interface CQAViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) ACGCollectionView *collectionView;
 @property (nonatomic, strong) NSArray *datas;
-@property (nonatomic, strong) CubeAttributesAnimator *animator;
+@property (nonatomic, strong) AnimatedCollectionViewLayout *layout;
+@property (nonatomic, assign) CGPoint lastContentOffset;
 
 @end
 
@@ -39,9 +41,11 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CQACollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[CQACollectionViewCell reuseIdentifier] forIndexPath:indexPath];
+    cell.collectionView = (ACGCollectionView *)collectionView;
     cell.label.text = self.datas[indexPath.item];
     cell.backgroundColor = [UIColor greenColor];
     cell.clipsToBounds = YES;
+    cell.scrollview.bounces = YES;
     return cell;
 }
 
@@ -67,37 +71,59 @@
     return CGFLOAT_MIN;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    if (self.collectionView.contentOffset.x <= 0) {
+//         if (scrollView.contentOffset.x < self.lastContentOffset.x ){
+//             self.collectionView.scrollEnabled  = NO;
+//         }
+//     } else if (self.collectionView.contentOffset.x > (self.collectionView.contentSize.width - scrollView.frame.size.width)) {
+//         if (scrollView. contentOffset.x > self.lastContentOffset.x ){
+//             self.collectionView.scrollEnabled = NO;
+//         }
+//     } else {
+//         self.collectionView.scrollEnabled = YES;
+//     }
+    self.lastContentOffset = self.collectionView.contentOffset;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.x < scrollView.frame.size.width) {
+        scrollView.scrollEnabled = NO;
+    } else if (scrollView.contentOffset.x >= scrollView.contentSize.width - scrollView.bounds.size.width) {
+        scrollView.scrollEnabled = NO;
+    }
+}
+
 #pragma mark - getter
 
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
         CGRect frame = self.view.bounds;
-        AnimatedCollectionViewLayout *layout = [[AnimatedCollectionViewLayout alloc] init];
-        layout.animator = self.animator;
-        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        _collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
+        _collectionView = [[ACGCollectionView alloc] initWithFrame:frame collectionViewLayout:self.layout];
         [_collectionView registerClass:[CQACollectionViewCell class] forCellWithReuseIdentifier:[CQACollectionViewCell reuseIdentifier]];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.pagingEnabled = YES;
-        _collectionView.bounces = NO;
+//        _collectionView.bounces = NO;
     }
     return _collectionView;
 }
 
-- (CubeAttributesAnimator *)animator {
-    if (!_animator) {
-        _animator = [[CubeAttributesAnimator alloc] init];
+- (AnimatedCollectionViewLayout *)layout {
+    if (!_layout) {
+        _layout = [[AnimatedCollectionViewLayout alloc] init];
+        _layout.animator = [[CubeAttributesAnimator alloc] init];
+        _layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     }
-    return _animator;
+    return _layout;
 }
 
 - (NSArray *)datas {
     return @[
-        @"hello",
-        @"hello",
-        @"hello",
-        @"hello",
+//        @"hello",
+//        @"hello",
+//        @"hello",
+//        @"hello",
         @"hello",
         @"hello",
         @"word"
