@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ACGScrollView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CQACollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) UIScrollView *scrollview;
+@property (nonatomic, strong) ACGScrollView *scrollview;
 @property (nonatomic, strong) ACGCollectionView *collectionView;
 
 @property (nonatomic, strong) UILabel *label;

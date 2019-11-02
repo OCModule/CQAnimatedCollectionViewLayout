@@ -34,6 +34,7 @@
 		AAF394FC236C032600DD312C /* UIView+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F7236C032600DD312C /* UIView+CQExt.m */; };
 		AAF39503236C455400DD312C /* ACGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF39502236C455400DD312C /* ACGCollectionView.m */; };
 		AAF39512236D839200DD312C /* ACGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF39511236D839200DD312C /* ACGScrollView.m */; };
+		AAF39515236D8A6D00DD312C /* ACGDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF39514236D8A6D00DD312C /* ACGDynamicItem.m */; };
 		E5250A335DE26F491FB47D7C /* Pods_CQAnimatedCollectionViewLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D98C2E56E09212CAE753089 /* Pods_CQAnimatedCollectionViewLayout_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,8 @@
 		AAF39502236C455400DD312C /* ACGCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGCollectionView.m; sourceTree = "<group>"; };
 		AAF39510236D839200DD312C /* ACGScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGScrollView.h; sourceTree = "<group>"; };
 		AAF39511236D839200DD312C /* ACGScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGScrollView.m; sourceTree = "<group>"; };
+		AAF39513236D8A6D00DD312C /* ACGDynamicItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACGDynamicItem.h; sourceTree = "<group>"; };
+		AAF39514236D8A6D00DD312C /* ACGDynamicItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACGDynamicItem.m; sourceTree = "<group>"; };
 		B250C72266C811CA0C0CE0FE /* Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Example/Pods-CQAnimatedCollectionViewLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F52F95926B56FA99E4B7F36E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FB2B6D2A073B2B0B7CB77FC2 /* Pods_CQAnimatedCollectionViewLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CQAnimatedCollectionViewLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +188,8 @@
 				AAF39502236C455400DD312C /* ACGCollectionView.m */,
 				AAF39510236D839200DD312C /* ACGScrollView.h */,
 				AAF39511236D839200DD312C /* ACGScrollView.m */,
+				AAF39513236D8A6D00DD312C /* ACGDynamicItem.h */,
+				AAF39514236D8A6D00DD312C /* ACGDynamicItem.m */,
 			);
 			name = "Example for CQAnimatedCollectionViewLayout";
 			path = CQAnimatedCollectionViewLayout;
@@ -454,6 +459,7 @@
 			files = (
 				AAF393E4236AD4F700DD312C /* CubeAttributesAnimator.swift in Sources */,
 				AAF39512236D839200DD312C /* ACGScrollView.m in Sources */,
+				AAF39515236D8A6D00DD312C /* ACGDynamicItem.m in Sources */,
 				AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */,
 				AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* CQAAppDelegate.m in Sources */,

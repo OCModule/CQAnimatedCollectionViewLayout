@@ -20,6 +20,9 @@
 @property (nonatomic, strong) AnimatedCollectionViewLayout *layout;
 @property (nonatomic, assign) CGPoint lastContentOffset;
 
+@property (nonatomic, assign) int currentPage;
+
+
 @end
 
 @implementation CQAViewController
@@ -27,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.currentPage = 0;
     // Do any additional setup after loading the view, typically from a nib.
     self.collectionView.frame = self.view.bounds;
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -46,6 +50,7 @@
     cell.backgroundColor = [UIColor greenColor];
     cell.clipsToBounds = YES;
     cell.scrollview.bounces = YES;
+    self.currentPage = [@(indexPath.item) intValue];
     return cell;
 }
 
@@ -71,28 +76,21 @@
     return CGFLOAT_MIN;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    if (self.collectionView.contentOffset.x <= 0) {
-//         if (scrollView.contentOffset.x < self.lastContentOffset.x ){
-//             self.collectionView.scrollEnabled  = NO;
-//         }
-//     } else if (self.collectionView.contentOffset.x > (self.collectionView.contentSize.width - scrollView.frame.size.width)) {
-//         if (scrollView. contentOffset.x > self.lastContentOffset.x ){
-//             self.collectionView.scrollEnabled = NO;
-//         }
-//     } else {
-//         self.collectionView.scrollEnabled = YES;
-//     }
-    self.lastContentOffset = self.collectionView.contentOffset;
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.x < scrollView.frame.size.width) {
-        scrollView.scrollEnabled = NO;
-    } else if (scrollView.contentOffset.x >= scrollView.contentSize.width - scrollView.bounds.size.width) {
-        scrollView.scrollEnabled = NO;
-    }
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    if (_currentPage == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
+//        scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//    } else if (_currentPage == self.datas.count-1 && scrollView.contentOffset.x > scrollView.bounds.size.width) {
+//        scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//    }
+//}
+//
+//- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+//    if (_currentPage == 0 && scrollView.contentOffset.x <= scrollView.bounds.size.width) {
+//        *targetContentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//    } else if (_currentPage == self.datas.count-1 && scrollView.contentOffset.x >= scrollView.bounds.size.width) {
+//        *targetContentOffset = CGPointMake(scrollView.bounds.size.width, 0);
+//    }
+//}
 
 #pragma mark - getter
 
