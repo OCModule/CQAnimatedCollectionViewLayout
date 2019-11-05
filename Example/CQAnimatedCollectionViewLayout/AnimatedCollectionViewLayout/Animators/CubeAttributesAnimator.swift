@@ -26,7 +26,10 @@ open class CubeAttributesAnimator: NSObject {
         if abs(position) >= 1 {
             attributes.contentView.layer.transform = CATransform3DIdentity
         } else if attributes.scrollDirection == .horizontal {
-            let rotateAngle = totalAngle * position
+            var rotateAngle = totalAngle * position
+            if collectionView.contentOffset.x <= 0 || (collectionView.contentOffset.x + collectionView.frame.size.width) > collectionView.contentSize.width {
+                rotateAngle = 0
+            }
             var transform = CATransform3DIdentity
             transform.m34 = perspective
             transform = CATransform3DRotate(transform, rotateAngle, 0, 1, 0)

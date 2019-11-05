@@ -35,9 +35,6 @@ open class AnimatedCollectionViewLayout: UICollectionViewFlowLayout {
 //            return attributes
 //        }
         guard let collectionView = self.collectionView else { return attributes }
-        if collectionView.contentOffset.x <= 0 || (collectionView.contentOffset.x + collectionView.frame.size.width) > collectionView.contentSize.width {
-            return attributes;
-        }
         
         let a = attributes
         

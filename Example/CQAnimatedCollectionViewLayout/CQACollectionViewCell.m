@@ -14,6 +14,8 @@
 @interface CQACollectionViewCell()<UIScrollViewDelegate>
 
 @property (nonatomic, assign) CGPoint lastContentOffset;
+@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, copy) NSArray *datas;
 
 @end
 
@@ -22,6 +24,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        self.firstItem = NO;
+        self.lastItem = NO;
         [self addComponents];
     }
     return self;
@@ -39,27 +43,39 @@
     self.scrollview.alwaysBounceHorizontal = YES;
     self.scrollview.delegate = self;
     self.scrollview.backgroundColor = [UIColor grayColor];
-    NSArray<NSString *> *texts = @[
-//    @"1",
-    @"2",
-    @"3",
-    ];
-    for (NSInteger i = 0; i < texts.count; i++) {
+    for (NSInteger i = 0; i < self.datas.count; i++) {
         UILabel *label = [[UILabel alloc] init];
         label.backgroundColor = [UIColor randomColor];
         label.textColor = [UIColor blackColor];
-        label.text = texts[i];
+        label.text = self.datas[i];
         label.frame = CGRectMake(i * w, 0, w, 200);
         [self.scrollview addSubview:label];
     }
+    self.currentIndex = 0;
 //    [self.scrollview setContentOffset:CGPointMake(-10, 0)];
+    [self.scrollview setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     self.scrollview.pagingEnabled = YES;
-    self.scrollview.contentSize = CGSizeMake(w * texts.count, 0);
-    self.scrollview.bounces = YES;
+    self.scrollview.contentSize = CGSizeMake(w * self.datas.count, 0);
+//    self.scrollview.bounces = NO;
 //    [pan addTarget:self action:@selector(handlePan:)];
     [self.contentView addSubview:self.label];
     [self.contentView addSubview:self.scrollview];
     self.contentView.backgroundColor = [UIColor randomColor];
+}
+
+- (void)adapterContentInset: (NSIndexPath *)indexPath items: (NSArray *)items {
+    self.firstItem = indexPath.item == 0;
+    self.lastItem = indexPath.item == (items.count - 1);
+    if (self.firstItem) {
+//        self.scrollview.bounces = YES;
+        [self.scrollview setContentInset:UIEdgeInsetsMake(0, 1, 0, 0)];
+    } else if (self.lastItem) {
+//        self.scrollview.bounces = YES;
+        [self.scrollview setContentInset:UIEdgeInsetsMake(0, 0, 0, 1)];
+    } else {
+//        self.scrollview.bounces = NO;
+        [self.scrollview setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
 }
 
 - (void)setCollectionView:(ACGCollectionView *)collectionView {
@@ -68,6 +84,14 @@
 
 - (void)handlePan:(id)sender {
     
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.currentIndex = scrollView.contentOffset.x / scrollView.frame.size.width;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    scrollView.contentOffset = CGPointMake(self.currentIndex * scrollView.bounds.size.width, 0);
 }
 
 + (NSString *)reuseIdentifier {
@@ -84,6 +108,14 @@
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     return [super pointInside:point withEvent:event];
+}
+
+- (NSArray *)datas {
+    return @[
+    //    @"1",
+        @"2",
+        @"3",
+        ];
 }
 
 @end

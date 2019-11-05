@@ -17,9 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) ACGScrollView *scrollview;
 @property (nonatomic, strong) ACGCollectionView *collectionView;
-
+@property (nonatomic, assign) BOOL firstItem;
+@property (nonatomic, assign) BOOL lastItem;
 @property (nonatomic, strong) UILabel *label;
 + (NSString *)reuseIdentifier;
+- (void)adapterContentInset: (NSIndexPath *)indexPath items: (NSArray *)items;
 @end
 
 NS_ASSUME_NONNULL_END

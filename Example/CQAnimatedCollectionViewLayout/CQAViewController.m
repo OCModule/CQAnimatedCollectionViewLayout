@@ -49,7 +49,7 @@
     cell.label.text = self.datas[indexPath.item];
     cell.backgroundColor = [UIColor greenColor];
     cell.clipsToBounds = YES;
-    cell.scrollview.bounces = YES;
+    [cell adapterContentInset:indexPath items:self.datas];
     self.currentPage = [@(indexPath.item) intValue];
     return cell;
 }
@@ -76,13 +76,13 @@
     return CGFLOAT_MIN;
 }
 
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    if (_currentPage == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
-//        scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-//    } else if (_currentPage == self.datas.count-1 && scrollView.contentOffset.x > scrollView.bounds.size.width) {
-//        scrollView.contentOffset = CGPointMake(scrollView.bounds.size.width, 0);
-//    }
-//}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    scrollView.contentOffset = CGPointMake(self.currentPage * scrollView.frame.size.width, 0);
+}
 //
 //- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
 //    if (_currentPage == 0 && scrollView.contentOffset.x <= scrollView.bounds.size.width) {
@@ -102,7 +102,7 @@
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.pagingEnabled = YES;
-//        _collectionView.bounces = NO;
+        _collectionView.bounces = NO;
     }
     return _collectionView;
 }
@@ -118,10 +118,10 @@
 
 - (NSArray *)datas {
     return @[
-//        @"hello",
-//        @"hello",
-//        @"hello",
-//        @"hello",
+        @"hello",
+        @"hello",
+        @"hello",
+        @"hello",
         @"hello",
         @"hello",
         @"word"
