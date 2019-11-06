@@ -11,15 +11,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface ACGCellModel: NSObject
+
+@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, copy) NSString *text;
+
+@end
+@class GeminiCell;
 @class ACGCollectionView;
 
 @interface CQACollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) ACGCellModel *model;
 @property (nonatomic, strong) ACGScrollView *scrollview;
 @property (nonatomic, strong) ACGCollectionView *collectionView;
 @property (nonatomic, assign) BOOL firstItem;
 @property (nonatomic, assign) BOOL lastItem;
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UIView *shadowView;
 + (NSString *)reuseIdentifier;
 - (void)adapterContentInset: (NSIndexPath *)indexPath items: (NSArray *)items;
 @end

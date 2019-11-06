@@ -11,11 +11,15 @@
 #import "ACGCollectionView.h"
 #import <MJRefresh/MJRefresh.h>
 
+@implementation ACGCellModel
+@end
+
 @interface CQACollectionViewCell()<UIScrollViewDelegate>
 
 @property (nonatomic, assign) CGPoint lastContentOffset;
 @property (nonatomic, assign) NSInteger currentIndex;
 @property (nonatomic, copy) NSArray *datas;
+
 
 @end
 
@@ -29,6 +33,10 @@
         [self addComponents];
     }
     return self;
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
 }
 
 - (void)addComponents {
@@ -51,16 +59,26 @@
         label.frame = CGRectMake(i * w, 0, w, 200);
         [self.scrollview addSubview:label];
     }
-    self.currentIndex = 0;
 //    [self.scrollview setContentOffset:CGPointMake(-10, 0)];
     [self.scrollview setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     self.scrollview.pagingEnabled = YES;
     self.scrollview.contentSize = CGSizeMake(w * self.datas.count, 0);
+    self.scrollview.decelerationRate =  UIScrollViewDecelerationRateFast;
 //    self.scrollview.bounces = NO;
 //    [pan addTarget:self action:@selector(handlePan:)];
     [self.contentView addSubview:self.label];
     [self.contentView addSubview:self.scrollview];
     self.contentView.backgroundColor = [UIColor randomColor];
+}
+
+- (void)setCurrentIndex:(NSInteger)currentIndex {
+    _currentIndex = currentIndex;
+    self.model.currentIndex = currentIndex;
+}
+
+- (void)setModel:(ACGCellModel *)model {
+    _model = model;
+    self.scrollview.contentOffset = CGPointMake(model.currentIndex * 414, 0);
 }
 
 - (void)adapterContentInset: (NSIndexPath *)indexPath items: (NSArray *)items {
@@ -80,6 +98,8 @@
 
 - (void)setCollectionView:(ACGCollectionView *)collectionView {
     _collectionView = collectionView;
+//    [self.scrollview.panGestureRecognizer requireGestureRecognizerToFail:collectionView.panGestureRecognizer];
+//    [collectionView. requireGestureRecognizerToFail:self.scrollview.panGestureRecognizer];
 }
 
 - (void)handlePan:(id)sender {
@@ -89,6 +109,10 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     self.currentIndex = scrollView.contentOffset.x / scrollView.frame.size.width;
 }
+
+//- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+//*targetContentOffset = scrollView.contentOffset;
+//}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     scrollView.contentOffset = CGPointMake(self.currentIndex * scrollView.bounds.size.width, 0);
@@ -112,7 +136,7 @@
 
 - (NSArray *)datas {
     return @[
-    //    @"1",
+        @"1",
         @"2",
         @"3",
         ];

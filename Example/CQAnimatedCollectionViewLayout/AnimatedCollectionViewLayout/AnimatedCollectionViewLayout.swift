@@ -16,11 +16,11 @@ open class AnimatedCollectionViewLayout: UICollectionViewFlowLayout {
     @objc open var animator: CubeAttributesAnimator?
     
     /// Overrided so that we can store extra information in the layout attributes.
-    open override class var layoutAttributesClass: AnyClass { return ACGAnimatedCollectionViewLayoutAttributes.self }
+    open override class var layoutAttributesClass: AnyClass { return AnimatedCollectionViewLayoutAttributes.self }
     
     open override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributes = super.layoutAttributesForElements(in: rect) else { return nil }
-        return attributes.map { self.transformLayoutAttributes($0.copy() as! ACGAnimatedCollectionViewLayoutAttributes) }
+        return attributes.compactMap { $0.copy() as? AnimatedCollectionViewLayoutAttributes }.map { self.transformLayoutAttributes($0) }
     }
     
     open override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
@@ -29,11 +29,8 @@ open class AnimatedCollectionViewLayout: UICollectionViewFlowLayout {
         return true
     }
     
-    private func transformLayoutAttributes(_ attributes: ACGAnimatedCollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-
-//        if attributes.animated == false {
-//            return attributes
-//        }
+    private func transformLayoutAttributes(_ attributes: AnimatedCollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        
         guard let collectionView = self.collectionView else { return attributes }
         
         let a = attributes
@@ -51,9 +48,8 @@ open class AnimatedCollectionViewLayout: UICollectionViewFlowLayout {
         if scrollDirection == .horizontal {
             distance = collectionView.frame.width
             itemOffset = a.center.x - collectionView.contentOffset.x
-            print("🌹 distance: \(distance)" + "contentOffset.x:\(collectionView.contentOffset.x)")
-//            a.startOffset = (a.frame.origin.x - collectionView.contentOffset.x) / a.frame.width
-//            a.endOffset = (a.frame.origin.x - collectionView.contentOffset.x - collectionView.frame.width) / a.frame.width
+            a.startOffset = (a.frame.origin.x - collectionView.contentOffset.x) / a.frame.width
+            a.endOffset = (a.frame.origin.x - collectionView.contentOffset.x - collectionView.frame.width) / a.frame.width
         } else {
             distance = collectionView.frame.height
             itemOffset = a.center.y - collectionView.contentOffset.y
@@ -65,12 +61,11 @@ open class AnimatedCollectionViewLayout: UICollectionViewFlowLayout {
         a.middleOffset = itemOffset / distance - 0.5
         
         // Cache the contentView since we're going to use it a lot.
-        let c = collectionView.cellForItem(at: attributes.indexPath)?.contentView
-//        if a.contentView == nil {
-            a.contentView = c ?? a.contentView
-//        }
+        if a.contentView == nil,
+            let c = collectionView.cellForItem(at: attributes.indexPath)?.contentView {
+            a.contentView = c
+        }
         
-//        animator?.animate(collectionView: collectionView, attributes: a)
         animator?.animate(collectionView: collectionView, attributes: a)
         
         return a

@@ -15,8 +15,10 @@
 
 @interface CQAViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+//@property (nonatomic, strong) ACGCollectionView *collectionView;
+
 @property (nonatomic, strong) ACGCollectionView *collectionView;
-@property (nonatomic, strong) NSArray *datas;
+@property (nonatomic, strong) NSArray<ACGCellModel *> *datas;
 @property (nonatomic, strong) AnimatedCollectionViewLayout *layout;
 @property (nonatomic, assign) CGPoint lastContentOffset;
 
@@ -46,8 +48,9 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CQACollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[CQACollectionViewCell reuseIdentifier] forIndexPath:indexPath];
     cell.collectionView = (ACGCollectionView *)collectionView;
-    cell.label.text = self.datas[indexPath.item];
-    cell.backgroundColor = [UIColor greenColor];
+    cell.model = self.datas[indexPath.item];
+    cell.label.text = self.datas[indexPath.item].text;
+    cell.backgroundColor = [UIColor randomColor];
     cell.clipsToBounds = YES;
     [cell adapterContentInset:indexPath items:self.datas];
     self.currentPage = [@(indexPath.item) intValue];
@@ -76,12 +79,32 @@
     return CGFLOAT_MIN;
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    return CGSizeZero;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeZero;
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    NSLog(@"🌹 contentOffset.x: %f ", scrollView.contentOffset.x);
     self.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
 }
 
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    if (velocity.x > 0) {
+        NSLog(@"🌹velocity.x: %f ", velocity.x);
+//            *targetContentOffset = CGPointMake((self.currentPage + 1)* scrollView.frame.size.width, 0);
+    } else {
+        NSLog(@"🌹velocity.x: %f ", velocity.x);
+//            *targetContentOffset = CGPointMake((self.currentPage - 1)* scrollView.frame.size.width, 0);
+    }
+}
+
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    scrollView.contentOffset = CGPointMake(self.currentPage * scrollView.frame.size.width, 0);
+    
 }
 //
 //- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
@@ -103,6 +126,7 @@
         _collectionView.delegate = self;
         _collectionView.pagingEnabled = YES;
         _collectionView.bounces = NO;
+        _collectionView.decelerationRate =  UIScrollViewDecelerationRateFast;
     }
     return _collectionView;
 }
@@ -116,16 +140,18 @@
     return _layout;
 }
 
-- (NSArray *)datas {
-    return @[
-        @"hello",
-        @"hello",
-        @"hello",
-        @"hello",
-        @"hello",
-        @"hello",
-        @"word"
-    ];
+- (NSArray<ACGCellModel *> *)datas {
+    if (!_datas) {
+        NSMutableArray *arr = [NSMutableArray array];
+        for (NSInteger i = 0; i < 4; i ++) {
+            ACGCellModel *model = [[ACGCellModel alloc] init];
+            model.currentIndex = 0;
+            model.text = [NSString stringWithFormat:@"%@", @(i)];
+            [arr addObject:model];
+        }
+        _datas = [NSArray arrayWithArray:arr];
+    }
+    return _datas;
 }
 
 @end

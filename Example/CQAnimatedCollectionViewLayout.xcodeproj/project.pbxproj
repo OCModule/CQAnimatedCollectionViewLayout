@@ -23,10 +23,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AA28300B237178E90003E069 /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */; };
+		AA28300D237179540003E069 /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28300C237179540003E069 /* CubeAttributesAnimator.swift */; };
 		AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */; };
 		AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CD236AD35400DD312C /* UIColor+CQExt.m */; };
-		AAF393E3236AD4F700DD312C /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393DD236AD4F700DD312C /* AnimatedCollectionViewLayout.swift */; };
-		AAF393E4236AD4F700DD312C /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393DF236AD4F700DD312C /* CubeAttributesAnimator.swift */; };
 		AAF393E5236AD4F700DD312C /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393E0236AD4F700DD312C /* UIView+Anchor.swift */; };
 		AAF394F9236C032600DD312C /* ACGAnimatedCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F0236C032600DD312C /* ACGAnimatedCollectionViewLayout.m */; };
 		AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF394F2236C032600DD312C /* ACGCubeAttributesAnimator.m */; };
@@ -76,13 +76,13 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F3A16E0E95A350FCD6F369 /* Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests/Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		98CC2C17E61ED69E90503DB9 /* Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests/Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		AA28300C237179540003E069 /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeAttributesAnimator.swift; sourceTree = "<group>"; };
 		AAF393C8236AD32700DD312C /* CQAnimatedCollectionViewLayout_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CQAnimatedCollectionViewLayout_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAF393CB236AD35300DD312C /* CQACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQACollectionViewCell.h; sourceTree = "<group>"; };
 		AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQACollectionViewCell.m; sourceTree = "<group>"; };
 		AAF393CD236AD35400DD312C /* UIColor+CQExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CQExt.m"; sourceTree = "<group>"; };
 		AAF393CE236AD35400DD312C /* UIColor+CQExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CQExt.h"; sourceTree = "<group>"; };
-		AAF393DD236AD4F700DD312C /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
-		AAF393DF236AD4F700DD312C /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeAttributesAnimator.swift; sourceTree = "<group>"; };
 		AAF393E0236AD4F700DD312C /* UIView+Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 		AAF393E2236AD4F700DD312C /* AnimatedCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedCollectionViewLayout.h; sourceTree = "<group>"; };
 		AAF394EF236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACGAnimatedCollectionViewLayoutAttributes.h; path = ../../../CQAnimatedCollectionViewLayout/Classes/ACGAnimatedCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		AAF393DC236AD4F700DD312C /* AnimatedCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				AAF393DD236AD4F700DD312C /* AnimatedCollectionViewLayout.swift */,
+				AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */,
 				AAF393DE236AD4F700DD312C /* Animators */,
 				AAF393E0236AD4F700DD312C /* UIView+Anchor.swift */,
 				AAF393E2236AD4F700DD312C /* AnimatedCollectionViewLayout.h */,
@@ -260,7 +260,7 @@
 		AAF393DE236AD4F700DD312C /* Animators */ = {
 			isa = PBXGroup;
 			children = (
-				AAF393DF236AD4F700DD312C /* CubeAttributesAnimator.swift */,
+				AA28300C237179540003E069 /* CubeAttributesAnimator.swift */,
 			);
 			path = Animators;
 			sourceTree = "<group>";
@@ -458,19 +458,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF393E4236AD4F700DD312C /* CubeAttributesAnimator.swift in Sources */,
 				AAF39512236D839200DD312C /* ACGScrollView.m in Sources */,
 				AAF39515236D8A6D00DD312C /* ACGDynamicItem.m in Sources */,
 				AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */,
+				AA28300B237178E90003E069 /* AnimatedCollectionViewLayout.swift in Sources */,
 				AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* CQAAppDelegate.m in Sources */,
+				AA28300D237179540003E069 /* CubeAttributesAnimator.swift in Sources */,
 				AAF394FC236C032600DD312C /* UIView+CQExt.m in Sources */,
 				AAF394F9236C032600DD312C /* ACGAnimatedCollectionViewLayout.m in Sources */,
 				6003F5A7195388D20070C39A /* CQAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AAF39503236C455400DD312C /* ACGCollectionView.m in Sources */,
 				AAF394FB236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */,
-				AAF393E3236AD4F700DD312C /* AnimatedCollectionViewLayout.swift in Sources */,
 				AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */,
 				AAF393E5236AD4F700DD312C /* UIView+Anchor.swift in Sources */,
 			);

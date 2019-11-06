@@ -6,3 +6,4 @@
 #import "ACGAnimatedCollectionViewLayoutAttributes.h"
 #import "ACGCubeAttributesAnimator.h"
 #import "ACGAnimatedCollectionViewLayout.h"
+#import "CQACollectionViewCell.h"

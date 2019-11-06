@@ -31,14 +31,14 @@
         transform.m34 = self.perspective;
         transform = CATransform3DRotate(transform, tmpRotateAngle, 0, 1, 0);
         attributes.contentView.layer.transform = transform;
-        [attributes.contentView keepCenterAndApplyAnchorPoint:CGPointMake(position > 0 ? 0 : 1, 0.5)];
+//        [attributes.contentView keepCenterAndApplyAnchorPoint:CGPointMake(position > 0 ? 0 : 1, 0.5)];
     } else {
         CGFloat tmpRotateAngle = self.totalAngle * position;
         CATransform3D transform = CATransform3DIdentity;
         transform.m34 = self.perspective;
         transform = CATransform3DRotate(transform, tmpRotateAngle, -1, 0, 0);
         attributes.contentView.layer.transform = transform;
-        [attributes.contentView keepCenterAndApplyAnchorPoint:CGPointMake(0.5, position > 0 ? 0 : 1)];
+//        [attributes.contentView keepCenterAndApplyAnchorPoint:CGPointMake(0.5, position > 0 ? 0 : 1)];
     }
 }
    
