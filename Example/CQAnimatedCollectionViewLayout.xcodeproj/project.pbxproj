@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AA0F236A2376EAE200328090 /* CQATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0F23692376EAE200328090 /* CQATableViewController.m */; };
+		AA0F236D2376EBCA00328090 /* CQATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0F236C2376EBCA00328090 /* CQATableViewCell.m */; };
 		AA28300B237178E90003E069 /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */; };
 		AA28300D237179540003E069 /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28300C237179540003E069 /* CubeAttributesAnimator.swift */; };
 		AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */; };
@@ -76,6 +78,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F3A16E0E95A350FCD6F369 /* Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests/Pods-CQAnimatedCollectionViewLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		98CC2C17E61ED69E90503DB9 /* Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CQAnimatedCollectionViewLayout_Tests/Pods-CQAnimatedCollectionViewLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA0F23682376EAE200328090 /* CQATableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQATableViewController.h; sourceTree = "<group>"; };
+		AA0F23692376EAE200328090 /* CQATableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQATableViewController.m; sourceTree = "<group>"; };
+		AA0F236B2376EBCA00328090 /* CQATableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQATableViewCell.h; sourceTree = "<group>"; };
+		AA0F236C2376EBCA00328090 /* CQATableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQATableViewCell.m; sourceTree = "<group>"; };
 		AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
 		AA28300C237179540003E069 /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeAttributesAnimator.swift; sourceTree = "<group>"; };
 		AAF393C8236AD32700DD312C /* CQAnimatedCollectionViewLayout_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CQAnimatedCollectionViewLayout_Example-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -190,6 +196,10 @@
 				AAF39511236D839200DD312C /* ACGScrollView.m */,
 				AAF39513236D8A6D00DD312C /* ACGDynamicItem.h */,
 				AAF39514236D8A6D00DD312C /* ACGDynamicItem.m */,
+				AA0F23682376EAE200328090 /* CQATableViewController.h */,
+				AA0F23692376EAE200328090 /* CQATableViewController.m */,
+				AA0F236B2376EBCA00328090 /* CQATableViewCell.h */,
+				AA0F236C2376EBCA00328090 /* CQATableViewCell.m */,
 			);
 			name = "Example for CQAnimatedCollectionViewLayout";
 			path = CQAnimatedCollectionViewLayout;
@@ -471,8 +481,10 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AAF39503236C455400DD312C /* ACGCollectionView.m in Sources */,
 				AAF394FB236C032600DD312C /* ACGAnimatedCollectionViewLayoutAttributes.m in Sources */,
+				AA0F236D2376EBCA00328090 /* CQATableViewCell.m in Sources */,
 				AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */,
 				AAF393E5236AD4F700DD312C /* UIView+Anchor.swift in Sources */,
+				AA0F236A2376EAE200328090 /* CQATableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

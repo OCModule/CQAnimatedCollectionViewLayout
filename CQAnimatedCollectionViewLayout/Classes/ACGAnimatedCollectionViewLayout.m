@@ -51,7 +51,7 @@
     }
     attr.scrollDirection = self.scrollDirection;
     attr.middleOffset = itemOffset / distance - 0.5;
-     NSLog(@"🌹attr.middleOffset: %f", attr.middleOffset);
+//     NSLog(@"🌹attr.middleOffset: %f", attr.middleOffset);
     UIView *contentView = [collectionView cellForItemAtIndexPath:attr.indexPath].contentView;
     if (attr.contentView == nil) {
         attr.contentView = contentView;

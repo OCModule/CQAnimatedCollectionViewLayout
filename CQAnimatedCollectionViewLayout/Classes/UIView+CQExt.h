@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (CQExt)
 
-//- (void)keepCenterAndApplyAnchorPoint: (CGPoint)point;
+- (void)keepCenterAndApplyAnchorPoint: (CGPoint)point;
 
 @end
 

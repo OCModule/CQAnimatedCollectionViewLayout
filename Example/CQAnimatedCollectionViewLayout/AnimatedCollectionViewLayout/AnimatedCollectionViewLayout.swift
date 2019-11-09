@@ -23,6 +23,17 @@ open class AnimatedCollectionViewLayout: UICollectionViewFlowLayout {
         return attributes.compactMap { $0.copy() as? AnimatedCollectionViewLayoutAttributes }.map { self.transformLayoutAttributes($0) }
     }
     
+    open override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        let pageSize = self.collectionView!.frame.size.width
+        var destOffset = CGPoint()
+        if velocity.x > 0 {
+            destOffset.x = ceil(self.collectionView!.contentOffset.x / pageSize) * pageSize;
+        } else {
+            destOffset.x = floor(self.collectionView!.contentOffset.x / pageSize) * pageSize;
+        }
+        return destOffset
+    }
+    
     open override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         // We have to return true here so that the layout attributes would be recalculated
         // everytime we scroll the collection view.

@@ -1,43 +1,30 @@
 //
-//  CQACollectionViewCell.m
+//  CQATableViewCell.m
 //  CQAnimatedCollectionViewLayout_Example
 //
-//  Created by Steve on 2019/10/30.
+//  Created by Steve on 2019/11/9.
 //  Copyright © 2019 王承权. All rights reserved.
 //
 
-#import "CQACollectionViewCell.h"
+#import "CQATableViewCell.h"
 #import "UIColor+CQExt.h"
-#import "ACGCollectionView.h"
-#import "UIView+CQExt.h"
 
-@implementation ACGCellModel
-@end
-
-@interface CQACollectionViewCell()<UIScrollViewDelegate>
+@interface CQATableViewCell()<UIScrollViewDelegate>
 
 @property (nonatomic, assign) CGPoint lastContentOffset;
 @property (nonatomic, assign) NSInteger currentIndex;
 @property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic, copy) NSArray *datas;
-
-
 @end
 
-@implementation CQACollectionViewCell
+@implementation CQATableViewCell
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.firstItem = NO;
-        self.lastItem = NO;
         [self addComponents];
     }
     return self;
-}
-
-- (void)prepareForReuse {
-    [super prepareForReuse];
 }
 
 - (void)addComponents {
@@ -93,15 +80,6 @@
     }
 }
 
-- (void)setCollectionView:(ACGCollectionView *)collectionView {
-    _collectionView = collectionView;
-//    [self.scrollview.panGestureRecognizer requireGestureRecognizerToFail:collectionView.panGestureRecognizer];
-//    [collectionView. requireGestureRecognizerToFail:self.scrollview.panGestureRecognizer];
-}
-
-- (void)handlePan:(id)sender {
-    
-}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     self.currentIndex = scrollView.contentOffset.x / scrollView.frame.size.width;
