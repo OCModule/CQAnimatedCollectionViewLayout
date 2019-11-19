@@ -27,6 +27,8 @@
 		AA0F236D2376EBCA00328090 /* CQATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0F236C2376EBCA00328090 /* CQATableViewCell.m */; };
 		AA28300B237178E90003E069 /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */; };
 		AA28300D237179540003E069 /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28300C237179540003E069 /* CubeAttributesAnimator.swift */; };
+		AA906CCB2384135E004000F5 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA906CCA2384135E004000F5 /* SwiftUIView.swift */; };
+		AA906CCD23841500004000F5 /* CQSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA906CCC23841500004000F5 /* CQSViewController.swift */; };
 		AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */; };
 		AAF393D0236AD35400DD312C /* UIColor+CQExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF393CD236AD35400DD312C /* UIColor+CQExt.m */; };
 		AAF393E5236AD4F700DD312C /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF393E0236AD4F700DD312C /* UIView+Anchor.swift */; };
@@ -84,6 +86,8 @@
 		AA0F236C2376EBCA00328090 /* CQATableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQATableViewCell.m; sourceTree = "<group>"; };
 		AA28300A237178E80003E069 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
 		AA28300C237179540003E069 /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeAttributesAnimator.swift; sourceTree = "<group>"; };
+		AA906CCA2384135E004000F5 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = SOURCE_ROOT; };
+		AA906CCC23841500004000F5 /* CQSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQSViewController.swift; sourceTree = "<group>"; };
 		AAF393C8236AD32700DD312C /* CQAnimatedCollectionViewLayout_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CQAnimatedCollectionViewLayout_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAF393CB236AD35300DD312C /* CQACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQACollectionViewCell.h; sourceTree = "<group>"; };
 		AAF393CC236AD35300DD312C /* CQACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQACollectionViewCell.m; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 				AA0F23692376EAE200328090 /* CQATableViewController.m */,
 				AA0F236B2376EBCA00328090 /* CQATableViewCell.h */,
 				AA0F236C2376EBCA00328090 /* CQATableViewCell.m */,
+				AA906CCA2384135E004000F5 /* SwiftUIView.swift */,
+				AA906CCC23841500004000F5 /* CQSViewController.swift */,
 			);
 			name = "Example for CQAnimatedCollectionViewLayout";
 			path = CQAnimatedCollectionViewLayout;
@@ -470,6 +476,7 @@
 			files = (
 				AAF39512236D839200DD312C /* ACGScrollView.m in Sources */,
 				AAF39515236D8A6D00DD312C /* ACGDynamicItem.m in Sources */,
+				AA906CCB2384135E004000F5 /* SwiftUIView.swift in Sources */,
 				AAF394FA236C032600DD312C /* ACGCubeAttributesAnimator.m in Sources */,
 				AA28300B237178E90003E069 /* AnimatedCollectionViewLayout.swift in Sources */,
 				AAF393CF236AD35400DD312C /* CQACollectionViewCell.m in Sources */,
@@ -477,6 +484,7 @@
 				AA28300D237179540003E069 /* CubeAttributesAnimator.swift in Sources */,
 				AAF394FC236C032600DD312C /* UIView+CQExt.m in Sources */,
 				AAF394F9236C032600DD312C /* ACGAnimatedCollectionViewLayout.m in Sources */,
+				AA906CCD23841500004000F5 /* CQSViewController.swift in Sources */,
 				6003F5A7195388D20070C39A /* CQAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AAF39503236C455400DD312C /* ACGCollectionView.m in Sources */,

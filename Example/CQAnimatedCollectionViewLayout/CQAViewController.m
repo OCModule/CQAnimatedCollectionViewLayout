@@ -34,9 +34,9 @@
     [super viewDidLoad];
     self.currentPage = 0;
     // Do any additional setup after loading the view, typically from a nib.
-    self.collectionView.frame = self.view.bounds;
-    self.collectionView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.collectionView];
+//    self.collectionView.frame = self.view.bounds;
+//    self.collectionView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:self.collectionView];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -69,6 +69,12 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(CQACollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
 //    [collectionView removeGestureRecognizer:cell.scrollview.panGestureRecognizer];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CQSViewController *svc = [[CQSViewController alloc] init];
+    [self presentViewController:svc animated:YES completion:^{
+    }];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
@@ -162,12 +168,12 @@
     if (!_collectionView) {
         CGRect frame = self.view.bounds;
         _collectionView = [[ACGCollectionView alloc] initWithFrame:frame collectionViewLayout:self.layout];
-        [_collectionView registerClass:[CQACollectionViewCell class] forCellWithReuseIdentifier:[CQACollectionViewCell reuseIdentifier]];
-        _collectionView.dataSource = self;
-        _collectionView.delegate = self;
-        _collectionView.pagingEnabled = YES;
-        _collectionView.bounces = NO;
-        _collectionView.decelerationRate =  UIScrollViewDecelerationRateFast;
+//        [_collectionView registerClass:[CQACollectionViewCell class] forCellWithReuseIdentifier:[CQACollectionViewCell reuseIdentifier]];
+//        _collectionView.dataSource = self;
+//        _collectionView.delegate = self;
+//        _collectionView.pagingEnabled = YES;
+//        _collectionView.bounces = NO;
+//        _collectionView.decelerationRate =  UIScrollViewDecelerationRateFast;
     }
     return _collectionView;
 }
