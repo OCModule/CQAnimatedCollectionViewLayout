@@ -32,7 +32,6 @@ class CQSViewController: UIViewController {
         self.view.backgroundColor = .red
     }
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true) {}
     }
